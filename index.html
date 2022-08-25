@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vector Solutions</title>
+    <h1 id="title">Vector Solutions Survey Form</h1>
+    <link rel="stylesheet" href="styles.css" />
+    <p id="description">Thanks for taking time to help us improve our services. </p>
+  </head>
+  <body>
+   <div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input type="text" id="name" placeholder="Enter Your Name" required /></label>
+        <label id="email-label">Email <input type="email" id="email" required  placeholder="Enter Your Email Id"/></label>
+        <label id="number-label">Age (optional) 
+          <input type="number" id="number" min="15" max="80" placeholder="Enter your Age">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>How do you rate our course?</label>
+          <label><input type="radio" name="rating" value=" " class="rating"> Excellent</label>
+          <label><input type="radio" name="rating" value="1" class="rating"> Good</label>
+          <label><input type="radio" name="rating" value="2" class="rating"> Moderate</label>
+          <label><input type="radio" name="rating" value="3" class="rating"> Bad</label>
+          <label><input type="radio" name="rating" value="4" class="rating"> Very Bad</label>
+        </fieldset>
+        <fieldset>
+        <label>Which aspect(s) of our course did you like very much?
+          <label><input type="checkbox" value=" " class="rating"> Course Content</label>
+          <label><input type="checkbox" value="1" class="rating"> Teaching Methodology</label>
+          <label><input type="checkbox" value="3" class="rating"> Mock Tests</label>
+          <label><input type="checkbox" value="4" class="rating"> Instructors</label>
+        </fieldset>
+        <fieldset>
+        <label>I am
+          <select id="dropdown">
+            <option>Select one</option>
+            <option>a Student</option>
+            <option>a Teacher</option>
+            <option>a Parent</option>
+            <option>a Trainer</option>
+          </select>
+        </label>
+          <label>Please provide your suggestions here
+          <textarea rows="3" cols="500"></textarea>
+          <input type="submit" id="submit" />
+          </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
